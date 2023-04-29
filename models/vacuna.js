@@ -19,7 +19,7 @@ const vacunaSquema = mongoose.Schema(
             required:true
         },
         lote:{
-            type:'number',
+            type:'string',
             required:true
         },
         fabricante:{

@@ -2,6 +2,10 @@ const mongoose = require('mongoose');
 
 const citaSquema = mongoose.Schema(
     {
+        codigo_cita:{
+            type:'string',
+            required:true
+        },
         fecha_cita:{
             type:'Date',
             required:true
