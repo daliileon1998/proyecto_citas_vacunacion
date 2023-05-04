@@ -16,7 +16,7 @@ app.use("/usuarios", UsuariosRouter);
 app.use("/vacunas", VacunasRouter);
 
 //Citas
-//app.use("/citas", CitasRouter);
+app.use("/citas", CitasRouter);
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT);

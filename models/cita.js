@@ -10,17 +10,62 @@ const citaSquema = mongoose.Schema(
             type:'Date',
             required:true
         },
-        id_usuario:{
-            type:'number',
-            required:true
+        usuario:{
+            cedula:{
+                type: 'string',
+                required:true,
+            },
+            nombre:{
+                type:'string',
+                required:true
+            },
+            apellido:{
+                type:'string',
+                required:true
+            },
+            correo:{
+                type:'string'
+            },
+            telefono:{
+                type:'string',
+                required:true
+            }
         },
-        id_vacunador:{
-            type:'number',
-            required:true
+        vacunador:{
+            cedula:{
+                type: 'string',
+                required:true,
+            },
+            nombre:{
+                type:'string',
+                required:true
+            },
+            apellido:{
+                type:'string',
+                required:true
+            }
         },
         id_vacuna:{
-            type:'number',
-            required:true
+            codigo:{
+                type:'string',
+                required:true
+            },
+            nombre:{
+                type:'string',
+                required:true
+            },
+            dosis:{
+                type:'number',
+                required:true
+            },
+            lote:{
+                type:'string',
+                required:true
+            },
+            fabricante:{
+                type:'string',
+                required:true
+            }
         },
         estado:{
             type:'string',

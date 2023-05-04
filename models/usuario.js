@@ -2,6 +2,10 @@ const mongoose = require('../db/conectionDB');
 
 const usuarioSquema = mongoose.Schema(
     {
+        cedula:{
+            type: 'string',
+            required:true,
+        },
         nombre:{
             type:'string',
             required:true
@@ -27,6 +31,10 @@ const usuarioSquema = mongoose.Schema(
         },
         fecha_nacimiento:{
             type:'Date',
+            required:true
+        },
+        contrasena:{
+            type:'string',
             required:true
         },
         estado:{
