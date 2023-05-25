@@ -42,5 +42,11 @@ UsuariosRouter.delete("/:id", (req,res)=>{
         .catch(error=> res.json({mensaje:error}))
 });
 
+//Login Usuario
+UsuariosRouter.post("/login", async(req,res)=>{
+    const usuario = await Usuarios.findOne({ correo: req.body.correo , contrasena: req.body.contrasena })
+    .then(datos=> res.json(datos))
+    .catch(error=> res.json({mensaje:error}));
+})
 
 module.exports = UsuariosRouter;
